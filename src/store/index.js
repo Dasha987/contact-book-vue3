@@ -2,48 +2,8 @@ import { createStore } from 'vuex'
 
 export const store = createStore({
     state: {
-        data: [{
-            category: "colleagues",
-            date: "22.09.23",
-            email: "nelfeelingood@gmail.com",
-            name: "Айтишник Данила",
-            phone: "+7(987)654-78-09",
-        },
-        {
-            category: "colleagues",
-            date: "24.10.23",
-            email: "nelfeelingood@gmail.com",
-            name: "Айтишник Данила",
-            phone: "+7(987)654-78-07",
-        },
-        {
-            category: "colleagues",
-            date: "24.10.23",
-            email: "nelfeelingood@gmail.com",
-            name: "Айтишник Данила",
-            phone: "+7(987)654-78-08",
-        }],
-        dataSorted: [{
-            category: "colleagues",
-            date: "22.09.23",
-            email: "nelfeelingood@gmail.com",
-            name: "Айтишник Данила",
-            phone: "+7(987)654-78-09",
-        },
-        {
-            category: "colleagues",
-            date: "24.10.23",
-            email: "nelfeelingood@gmail.com",
-            name: "Айтишник Данила",
-            phone: "+7(987)654-78-07",
-        },
-        {
-            category: "colleagues",
-            date: "24.10.23",
-            email: "nelfeelingood@gmail.com",
-            name: "Айтишник Данила",
-            phone: "+7(987)654-78-08",
-        }],
+        data: [],
+        dataSorted: [],
         isModalContact: false,
         isModalAddContact: false,
         isNotification: "",
