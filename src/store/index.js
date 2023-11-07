@@ -90,16 +90,10 @@ export const store = createStore({
             commit('setIsNotification', isNotification)
         },
         setDataSorted({ commit, state }, category) {
-            const data = [...state.data]
-            data.sort((item, itemNext) => {
-                if (item.date > itemNext.date) return 1
-                if (item.date < itemNext.date) return -1
-                return 0
-            })
             if (category == "all") {
-                commit('setDataSorted', data)
+                commit('setDataSorted', [...state.data])
             } else {
-                const dataSorted = data.filter((contact) => {
+                const dataSorted = [...state.data].filter((contact) => {
                     return contact.category == category
                 })
                 commit('setDataSorted', dataSorted)
